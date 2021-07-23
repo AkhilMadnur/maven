@@ -4,19 +4,19 @@ pipeline{
     
       stage('Test'){
           steps{
-          bat 'mvn test'
+          sh 'mvn test'
           }
       }
-      stage('Build'){
-          steps{
-          bat 'mvn install'
-          }
-      }
-      stage('Deploy'){
-          steps{
-          bat 'mvn deploy'
-          }
-      }
+ //     stage('Build'){
+ //         steps{
+ //         sh 'mvn install'
+ //         }
+ //     }
+ //     stage('Deploy'){
+ //         steps{
+ //         bat 'mvn deploy'
+  //        }
+ //     }
       
     }
 }
